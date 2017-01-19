@@ -25,7 +25,7 @@ public class MainFrameController {
         });*/
 
         frame.getAddButton().addActionListener(e -> {
-            AddFrameController controller = new AddFrameController(new AddFrame(), new ContactJsonDao
+            AddFrameController controller = new AddFrameController(new AddFrame(1), new ContactJsonDao
                     (new FileSaver("C:\\Users\\Alexander\\IdeaProjects\\Catalog\\src\\main\\resources\\contact.txt")));
             controller.run();
         });
